@@ -5,6 +5,7 @@
 body {
   margin: 0;
   font-family: inter, sans-serif;
+  background-color: #282d35;
 }
 
 nav {
@@ -30,4 +31,27 @@ nav {
 }
 .nav-text {
   color: #deebf8;
+}
+
+main {
+  /* background-color: #282d35; */
+  color: #fff;
+  padding: 4em 2em;
+  background-image: url("../src/images/react-icon-large.png");
+  background-repeat: no-repeat;
+  background-position: right 75%;
+}
+.main-heading {
+  margin: 0;
+  font-size: 2.5em;
+  letter-spacing: -0.05em;
+}
+.list-facts {
+  line-height: 2.2em;
+  padding-top: 1.5em;
+  max-width: 400px;
+}
+.list-facts > li::marker {
+  color: #61dafb;
+  font-size: 1.4rem;
 }

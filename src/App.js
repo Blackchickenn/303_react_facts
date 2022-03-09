@@ -4,7 +4,7 @@ import MainContent from "./MainContent"
 
 export default function App(){
     return (
-        <div>
+        <div className="container">
             <Navbar />
             <MainContent />
         </div>
