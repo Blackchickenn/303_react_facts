@@ -5,17 +5,21 @@
 body {
   margin: 0;
   font-family: inter, sans-serif;
-  background-color: #282d35;
 }
 
 nav {
-  background-color: #21222a;
+  background-color: #fff;
   display: flex;
   align-items: center;
   padding: 1em 1em;
+  border-bottom: solid 2px #c1c0c5;
 }
 
-.nav-logo-text,
+nav.dark {
+  background-color: #21222a;
+}
+
+.nav--logo--text,
 .nav-text {
   margin: 0;
 }
@@ -24,7 +28,7 @@ nav {
   width: 60px;
   margin-right: 10px;
 }
-.nav-logo-text {
+.nav--logo--text {
   color: #61dafb;
   margin-right: auto;
   font-size: 1.4rem;
@@ -32,15 +36,71 @@ nav {
 .nav-text {
   color: #deebf8;
 }
+.toggle {
+  display: flex;
+  align-items: center;
+  width: 120px;
+  justify-content: space-between;
+}
+
+.toggle--slider {
+  display: flex;
+  align-items: center;
+  height: 15px;
+  width: 30px;
+  background-color: #2b283a;
+  border-radius: 7.5px;
+  cursor: pointer;
+  justify-content: flex-start;
+}
+
+nav.dark .toggle--slider {
+  justify-content: flex-end;
+  background-color: #fff;
+}
+
+.toggle--slider--circle {
+  height: 13px;
+  width: 13px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+nav.dark .toggle--slider--circle {
+  background-color: black;
+}
+
+.toggle--light {
+  color: #2b283a;
+}
+nav.dark .toggle--light {
+  color: #918e9b;
+}
+
+.toggle--dark {
+  color: #d5d4d8;
+}
+
+nav.dark .toggle--dark {
+  color: #fff;
+}
 
 main {
-  /* background-color: #282d35; */
-  color: #fff;
+  background-color: #fff;
+  color: #282d35;
   padding: 4em 2em;
   background-image: url("../src/images/react-icon-large.png");
   background-repeat: no-repeat;
-  background-position: right 75%;
+  background-position: right 30%;
+  height: 100vh;
 }
+
+main.dark {
+  background-image: url("../src/images/react-icon-large.png");
+  background-color: #282d35;
+  color: #fff;
+}
+
 .main-heading {
   margin: 0;
   font-size: 2.5em;
