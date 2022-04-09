@@ -1,3 +1,5 @@
+C:\Coding\311_vaccination_form\src\images\Vaccination_form_1.JPG
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
